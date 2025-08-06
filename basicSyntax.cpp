@@ -3,6 +3,12 @@
 #include <cmath> // cmath library for mathematical functions
 using namespace std; // Use the standard namespace to avoid prefixing std:: (namespaces are used to organize code and prevent name conflicts)
 
+int x = 10; // Global variable declaration, accessible in all functions below
+
+void exampleFunction(); // Functions MUST ALWAYS be declared before they are used.
+double math(double a, double b); // Function prototype for a function that takes two doubles and returns their sum
+void bakepizza(); // Function prototype for a function that bakes pizza without toppings
+void bakepizza(string topping); // Function prototype for a function that bakes pizza with a topping
 
 typedef std::vector<long long> BigInt_t; // typedef is used to create a nickname for a very long or tedeous type, in this case, a vector of long long integers
 
@@ -142,12 +148,55 @@ int main() { // Main function to execute the program
 
 
 
+    /* Function usage examples (go down to see the functions) */
+
+    exampleFunction(); // Call the example function to demonstrate function declaration and definition
+    bakepizza(); // Call the bakepizza function to demonstrate function definition without parameters
+    bakepizza("chicken"); // Call the overloaded bakepizza function with a topping parameter
+
+    int myNum = 5;
+
+
+
    
     return 0;// Return 0 to indicate successful execution /same as exit(0);
     // Note: In C++, the main function must return an int, so we return 0 to indicate successful execution.
     // If you want to return an error code, you can return a non-zero value.
     // The return value of the main function is used by the operating system to determine if the program executed successfully or not.  
-
-
 } // All functions in C++ must be closed with a closing brace
 
+
+void exampleFunction() { // Example function to demonstrate function declaration and definition
+    std::cout << "This is an example function." << std::endl; // Output a message
+
+    /* User Defined Functions */
+    // Functions are declared with a return type, name, and parameters (if any).
+    // Example:
+
+    /* Note: This function is commented out, but you can uncomment it to use it.
+
+    int add(int a, int b) { // Function to add two integers
+        return a + b; // Return the sum of a and b
+    } 
+    */
+} // This function's return type is void, meaning it does not return a value. You can also use int, float, double, etc. as return types.
+
+double math(double a, double b) { // Example function to demonstrate function parameters
+    double a = 5.0;
+    double b = 10.0;
+    return a + b; // Return the sum of a and b
+} // This function takes two double parameters and returns their sum. You can also use int, float, etc. as parameter types.
+
+void bakepizza() { // Example function to demonstrate function definition
+    std::cout << "Baking pizza..." << std::endl; // Output a message
+} 
+
+void bakepizza(std::string topping) { // Overloaded function to demonstrate function overloading
+    std::cout << "Baking pizza with " << topping << " topping..." << std::endl; // Output a message with the topping
+} // This function takes a string parameter and outputs a message with the topping. Function overloading allows you to have multiple functions with the same name but different parameters.
+
+void printNum(int myNum) { // Function to print a number
+    std::cout << myNum; // myNum can't be seen by this function since functions can't view inside other functions. You can only pass variables to functions as parameters.
+    // unless you use global variables, which is not recommended.
+
+}
