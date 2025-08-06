@@ -83,12 +83,71 @@ int main() { // Main function to execute the program
    // Example 2:
    x > 0 ? cout << "x is positive" : cout << "x is negative or zero"; // If x is greater than 0, print "x is positive", otherwise print "x is negative or zero"
 
+   // Logical operators are the same as any programing language
+   // && (and), ! (not), || (or)
 
+   /* String methods (only useful ones):
+
+   some useful string methods in C++ are:
+   std::string str = "Hello, World!"; // to declare a string
+   str.length(); // Returns the length of the string
+   str.substr(0, 5); // Returns a substring from index 0 to index 5 (this is also known as slicing)
+   str.find("World"); // Returns the index of the first occurrence of "World" in the string
+   str.replace(0, 5, "Hi"); // Replaces the first 5 characters of the string with "Hi"
+   str.append(" How are you?"); // Appends " How are you?" to the end of the string
+   str.erase(0, 5); // Erases the first 5 characters of the string
+   str.insert(0, "Hey "); // Inserts "Hey " at the beginning of the string
+   str.clear(); // Clears the string
+   str.empty(); // Returns true if the string is empty, false otherwise.   
+   */
+
+   // Loops:
+   // C++ supports for, while, and do-while loops, similar to other languages.
+   //examples
+    for (int i = 0; i < 5; i++) {
+         cout << "Loop iteration: " << i << endl; // For loop structure 
+    } // Best use case for iterating over arrays or collections
+
+    int j = 0;
+    while (j < 5) { // While loop structure
+        cout << "While loop iteration: " << j << endl;
+        j++;
+    }   // Best use case for when the number of iterations is not known beforehand
+
+    j = 0;
+    do { // Do-while loop structure
+        cout << "Do-while loop iteration: " << j << endl;
+        j++;
+    } while (j < 5); // Best use case for when you want to execute the loop at least once, regardless of the condition
+
+    // Nested loops:
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << "Nested loop iteration: i = " << i << ", j = " << j << endl; // Nested loop structure
+        }
+    } 
+    // Note: nested loops usually have an O(n^2) time complexity, so use them wisely.
+    // The only way to avoid nested loops is to use recursion or other algorithms like dynamic programming.
+    // The only exeption to this is if you use binary search or other algorithms that have a logarithmic time complexity. In this case it would be O(n log n) time complexity.
+
+    // Break and continue statements:
+    for (int i = 0; i < 5; i++) {
+        if (i == 2) {
+            continue; // Skip the rest of the loop when i is 2
+        }
+        if (i == 4) {
+            break; // Exit the loop when i is 4
+        }
+        cout << "Loop iteration: " << i << endl; // Output the value of i
+    } // Break exits the loop, continue skips the current iteration and goes to the next one (Pretty simple, right?)
 
 
 
    
-    return 0;// Return 0 to indicate successful execution /same as python
+    return 0;// Return 0 to indicate successful execution /same as exit(0);
+    // Note: In C++, the main function must return an int, so we return 0 to indicate successful execution.
+    // If you want to return an error code, you can return a non-zero value.
+    // The return value of the main function is used by the operating system to determine if the program executed successfully or not.  
 
 
 } // All functions in C++ must be closed with a closing brace
