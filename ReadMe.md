@@ -18,17 +18,25 @@ Welcome to my C++ learning repository! This is where I document my progress as I
 - ✅ **Mathematical Functions** - `cmath` library functions (sqrt, pow, abs, etc.)
 - ✅ **Control Structures** - If statements, switch cases, ternary operators
 - ✅ **Logical & Comparison Operators** - Boolean logic and comparisons
+- ✅ **Loops & Iteration** - For, while, do-while loops with break/continue
+- ✅ **String Operations** - String methods and manipulation
+- ✅ **Functions & Scope** - Function declaration, definition, overloading, and parameter passing
+- 🔄 **Data Structures & Algorithms** - Currently learning efficient data organization and algorithmic problem-solving
 
 ## 📁 Project Files
 
-### 📄 [notes.cpp](./notes.cpp)
-Comprehensive study notes covering C++ fundamentals including:
-- Standard library usage (`iostream`, `vector`, `cmath`)
-- Variable declarations and type conversions
-- I/O operations with `cin` and `cout`
-- Mathematical functions and operations
-- Conditional statements and control flow
-- Logical operators and ternary operators
+### 📄 [basicSyntax.cpp](./basicSyntax.cpp) - Comprehensive C++ Fundamentals
+Extensive study notes and mini-projects covering core C++ concepts:
+- **Standard Library Usage**: `iostream`, `vector`, `cmath` libraries
+- **Variable Management**: Global/local variables, constants, type conversions
+- **I/O Operations**: User input/output with `cin` and `cout`
+- **Mathematical Programming**: Complete `cmath` function demonstrations
+- **Control Flow**: Conditional statements, switch cases, ternary operators
+- **Loop Structures**: For, while, do-while loops with nested examples
+- **String Operations**: Comprehensive string method demonstrations (length, substr, find, replace, etc.)
+- **Function Programming**: Declaration, definition, overloading, and parameter passing
+- **Scope Management**: Global vs local variables and function visibility
+- **Performance Insights**: Time complexity notes (O(n²) for nested loops)
 
 ### 🔢 [calc.cpp](./calc.cpp) - Console Calculator
 A fully functional command-line calculator that demonstrates:
@@ -44,6 +52,13 @@ A practical geometry application showcasing:
 - **User Input Validation**: Interactive leg length input
 - **Mathematical Functions**: Usage of `pow()` and `sqrt()` functions
 - **Real-world Application**: Solving right triangle problems
+
+### 🧠 [DSA.cpp](./DSA.cpp) - Data Structures & Algorithms Notes
+Advanced study notes focusing on efficient data organization and algorithmic thinking:
+- **Data Structure Concepts**: Understanding different ways to organize and store data
+- **Algorithm Design**: Step-by-step procedures for problem-solving
+- **Efficiency Analysis**: Learning to evaluate and optimize code performance
+- **Foundation Building**: Preparing for complex ML and physics engine development
 
 ## 🛠️ How to Run
 
@@ -72,8 +87,12 @@ g++ -o hypotenuse Hyp.cpp
 ./hypotenuse
 
 # Study Notes (compilation test)
-g++ -o notes notes.cpp
-./notes
+g++ -o basicSyntax basicSyntax.cpp
+./basicSyntax
+
+# DSA Notes (compilation test)
+g++ -o dsa DSA.cpp
+./dsa
 ```
 
 ## 🌟 Key Learning Highlights
@@ -83,6 +102,9 @@ g++ -o notes notes.cpp
 - **Type Safety**: Proper type declarations and conversions
 - **Modular Design**: Organizing code with functions and logical separation
 - **User Experience**: Creating intuitive command-line interfaces
+- **Algorithmic Thinking**: Beginning to understand data organization and problem-solving strategies
+- **Function Architecture**: Mastery of function overloading, parameter passing, and scope management
+- **Loop Optimization**: Understanding time complexity and efficient iteration patterns
 
 ### Mathematical Programming
 - **Computational Mathematics**: Implementing mathematical formulas in code
@@ -92,6 +114,7 @@ g++ -o notes notes.cpp
 ## 🔮 Next Steps
 
 ### Immediate Learning Goals
+- [x] **Data Structures & Algorithms**: Understanding efficient data organization (In Progress)
 - [ ] **Object-Oriented Programming**: Classes, objects, inheritance
 - [ ] **Dynamic Memory Management**: Pointers and memory allocation
 - [ ] **STL Containers**: Vectors, arrays, maps, and iterators
