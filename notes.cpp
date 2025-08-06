@@ -1,9 +1,8 @@
 #include <iostream> //Std in and out for C++ standard library
 #include <vector> // vector library for dynamic arrays (using in typedef example)
 #include <cmath> // cmath library for mathematical functions
-
-
 using namespace std; // Use the standard namespace to avoid prefixing std:: (namespaces are used to organize code and prevent name conflicts)
+
 
 typedef std::vector<long long> BigInt_t; // typedef is used to create a nickname for a very long or tedeous type, in this case, a vector of long long integers
 

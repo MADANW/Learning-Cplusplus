@@ -2,8 +2,8 @@
 
 #include <iostream> // For input and output operations
 #include <cmath> // For mathematical functions like sqrt and power
-
 using namespace std;
+
 
 int main() {
     double x, y, z;
