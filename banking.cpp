@@ -28,10 +28,6 @@ do {
                 cout << "Please create an account first!\n";
             } else {
                 cout << "You chose withdraw\n";
-                cin.ignore(); // Clear the input buffer
-                cout << "Enter your name to access your account: ";
-                getline(cin, name);
-                
                 double withdrawAmount;
                 cout << "Enter withdrawal amount: ";
                 cin >> withdrawAmount;
@@ -50,10 +46,6 @@ do {
                 cout << "Please create an account first!\n";
             } else {
                 cout << "You chose deposit\n";
-                cin.ignore(); // Clear the input buffer
-                cout << "Enter your name to access your account: ";
-                getline(cin, name);
-                
                 double depositAmount;
                 cout << "Enter deposit amount: ";
                 cin >> depositAmount;
@@ -68,9 +60,6 @@ do {
                 cout << "Please create an account first!\n";
             } else {
                 cout << "You chose to see your balance\n";
-                cin.ignore(); // Clear the input buffer
-                cout << "Enter your name to access your account: ";
-                getline(cin, name);
                 cout << "Your current balance is: $" << balance << endl;
             }
             break;
