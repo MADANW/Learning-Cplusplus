@@ -12,7 +12,7 @@ int main() {
     cout << "2. Fahrenheit" << endl;
     cout << "3. Kelvin" << endl;
 
-    cin >> choice; 
+    cin >> choice; // This commment was written using VIM from the terminal. 
 
     switch (choice) {
         case 1: // Celsius to Fahrenheit
@@ -39,5 +39,6 @@ int main() {
         default:
             cout << "Invalid choice!" << endl;
     }
+    return 0;
 
 }
