@@ -13,7 +13,7 @@ using namespace std;
 
 double getTotal(double prices[], int size); // Function prototype for a function that calculates the total price of an array of prices
 int searchArray(int arr[], int size, int target); // Function prototype for a function that searches for a target value in an array and returns its index
-
+void bubbleSort(int arr[], int size); // Function prototype for a function that sorts an array using bubble sort algorithm
 int main() {
 
     /* Arrays */
@@ -76,8 +76,12 @@ int main() {
 
     // In this case we will be using bubble sort, which is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the
 
-    int nums2[] = {5, 3, 8, 4, 2, 1, 6, 7};
-
+    int nums2[] = {5, 3, 8, 4, 2, 1, 6, 7, 9};
+    int size2 = sizeof(nums2) / sizeof(nums2[0]); // Calculate the size of the array
+    bubbleSort(nums2, size2); // Sort the array using the bubble sort function
+    for (int element : nums2) {
+        cout << element << " "; // Output each element in the array before sorting
+    }
         return 0;
 }
 
@@ -98,4 +102,14 @@ int searchArray(int arr[], int size, int target) {
     // Note: If the array is sorted, you can use binary search for O(log n) time complexity
     // Binary search is more efficient for large arrays, but requires the array to be sorted
     return -1; // Return -1 if the target is not found
+}
+
+void bubbleSort(int arr[], int size) {
+    for (int i = 0; i < size - 1; i++) {
+        for (int j = 0; j < size - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(arr[j], arr[j + 1]); // Swap adjacent elements if they are in the wrong order
+            }
+        }
+    }
 }
