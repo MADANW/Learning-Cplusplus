@@ -7,9 +7,11 @@ An alogorithm is a sequence of steps that can be followed to solve a problem or 
 
 Time complexity is a measure of the amount of time an algorithm takes to complete as a function of the size of the input. It is usually expressed in terms of Big O notation, which describes the upper bound of the time complexity in the worst case scenario.
 */
-
+#include <string>
 #include <iostream>
 using namespace std;
+
+double getTotal(double prices[], int size); // Function prototype for a function that calculates the total price of an array of prices
 
 int main() {
 
@@ -41,5 +43,18 @@ int main() {
         cout << name << " "; // Output each name in the array
     }
 
+    // Passing arrays to functions:
+    double prices[] = {10.99, 20.49, 5.99};
+    double total = getTotal(prices, 3); // Call the function to calculate the total price of the array
+    cout << "\nTotal price: $" << total << endl; // Output the total price
+
         return 0;
+}
+
+double getTotal(double prices[], int size) {
+    double total = 0.0;
+    for (int i = 0; i < size; i++) {
+        total += prices[i]; // Add each price to the total
+    }
+    return total; // Return the total price
 }
