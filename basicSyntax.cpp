@@ -156,6 +156,18 @@ int main() { // Main function to execute the program
 
     int myNum = 5;
 
+    // Sizeof operator:
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl; // Outputs the size of an int in bytes
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl; // Outputs the size of a double in bytes
+    cout << "Size of char: " << sizeof(char) << " bytes" << endl; // Outputs the size of a char in bytes
+    cout << "Size of myNum: " << sizeof(myNum) << " bytes" << endl; // Outputs the size of myNum
+
+    /* Ints have a size of 4 bytes, doubles have a size of 8 bytes, and chars have a size of 1 byte.
+    A string is an array of characters, so its size is the size of the array plus 1 byte for the null terminator.
+    The sizeof operator returns the size of a variable or data type in bytes.
+    You can use it to determine the size of a variable or data type at runtime.
+    */
+
 
 
    
